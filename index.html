@@ -1,892 +1,1926 @@
 <!DOCTYPE html>
 <!-- saved from url=(0058)https://readdy.link/share/2b0a0f056b87b65f9e2c44f6b89a6f5d -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" crossorigin="anonymous" async="" src="./Severn Trent Market Expansion Strategy_files/array.js.download"></script><script src="./Severn Trent Market Expansion Strategy_files/e.js.download"></script>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script
+      type="text/javascript"
+      crossorigin="anonymous"
+      async=""
+      src="./Severn Trent Market Expansion Strategy_files/array.js.download"
+    ></script>
+    <script src="./Severn Trent Market Expansion Strategy_files/e.js.download"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Severn Trent Market Expansion Strategy</title>
     <script src="./Severn Trent Market Expansion Strategy_files/3.4.16"></script>
     <script src="./Severn Trent Market Expansion Strategy_files/echarts.min.js.download"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./Severn Trent Market Expansion Strategy_files/css2" rel="stylesheet">
-    <link rel="stylesheet" href="./Severn Trent Market Expansion Strategy_files/remixicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      href="./Severn Trent Market Expansion Strategy_files/css2"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./Severn Trent Market Expansion Strategy_files/remixicon.min.css"
+    />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#3B82F6',
-                        secondary: '#64748B'
-                    },
-                    borderRadius: {
-                        'none': '0px',
-                        'sm': '4px',
-                        DEFAULT: '8px',
-                        'md': '12px',
-                        'lg': '16px',
-                        'xl': '20px',
-                        '2xl': '24px',
-                        '3xl': '32px',
-                        'full': '9999px',
-                        'button': '8px'
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3B82F6",
+              secondary: "#64748B",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
     </script>
     <style>
-        :where([class^="ri-"])::before {
-            content: "\f3c2";
-        }
-        
-        body {
-            background-color: #121212;
-            color: #FFFFFF;
-        }
-        
-        .card-bg {
-            background-color: #1E1E1E;
-        }
-        
-        .hover-glow:hover {
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-        }
-        
-        .analysis-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
-        
-        .swot-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-        
-        .ansoff-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-        
-        .tows-matrix {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 1rem;
-        }
-        
-        .roadmap-phase {
-            border-left: 3px solid #3B82F6;
-            padding-left: 1.5rem;
-        }
-        
-        .kpi-card {
-            transition: all 0.3s ease;
-        }
-        
-        .kpi-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: #1E1E1E;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: #FFFFFF;
-            border-radius: 4px;
-        }
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+
+      body {
+        background-color: #121212;
+        color: #ffffff;
+      }
+
+      .card-bg {
+        background-color: #1e1e1e;
+      }
+
+      .hover-glow:hover {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      }
+
+      .analysis-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .swot-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .ansoff-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .tows-matrix {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .roadmap-phase {
+        border-left: 3px solid #3b82f6;
+        padding-left: 1.5rem;
+      }
+
+      .kpi-card {
+        transition: all 0.3s ease;
+      }
+
+      .kpi-card:hover {
+        transform: translateY(-5px);
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #1e1e1e;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #ffffff;
+        border-radius: 4px;
+      }
     </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.left-3{left:0.75rem}.top-1\/2{top:50%}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-3{margin-top:0.75rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-12{height:3rem}.h-16{height:4rem}.h-4{height:1rem}.min-h-screen{min-height:100vh}.w-12{width:3rem}.w-16{width:4rem}.w-4{width:1rem}.w-64{width:16rem}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.rounded-2xl{border-radius:24px}.rounded-lg{border-radius:16px}.border-b{border-bottom-width:1px}.border-none{border-style:none}.border-gray-800{--tw-border-opacity:1;border-color:rgb(31 41 55 / var(--tw-border-opacity, 1))}.bg-blue-900\/30{background-color:rgb(30 58 138 / 0.3)}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-green-900\/30{background-color:rgb(20 83 45 / 0.3)}.bg-primary{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-purple-900\/30{background-color:rgb(88 28 135 / 0.3)}.bg-red-900\/30{background-color:rgb(127 29 29 / 0.3)}.bg-yellow-900\/30{background-color:rgb(113 63 18 / 0.3)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-gray-900{--tw-gradient-from:#111827 var(--tw-gradient-from-position);--tw-gradient-to:rgb(17 24 39 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-black{--tw-gradient-to:#000 var(--tw-gradient-to-position)}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pl-10{padding-left:2.5rem}.text-center{text-align:center}.font-\[\'Pacifico\'\]{font-family:'Pacifico'}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.leading-relaxed{line-height:1.625}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:text-primary:hover{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-primary:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246 / var(--tw-ring-opacity, 1))}@media (min-width: 768px){.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style><link type="image/png" rel="icon" href="https://public.readdy.ai/gen_page/readdy-logo.png"><link rel="stylesheet" href="./Severn Trent Market Expansion Strategy_files/css2(1)"></head>
-<body>
-    <header class="bg-gradient-to-r from-gray-900 to-black py-4 px-6 border-b border-gray-800">
-        <div class="flex items-center justify-between">
-            <div class="flex items-center space-x-8">
-               <img src="/logo.png" alt="Readdy Logo" class="h-12 w-12">
-                <nav class="hidden md:flex space-x-6">
-                    <a href="#" class="text-white hover:text-primary transition-colors">Overview</a>
-                    <a href="#" class="text-white hover:text-primary transition-colors">Analysis</a>
-                    <a href="#" class="text-white hover:text-primary transition-colors">Strategy</a>
-                    <a href="#" class="text-white hover:text-primary transition-colors">Roadmap</a>
-                    <a href="#" class="text-white hover:text-primary transition-colors">KPIs</a>
-                </nav>
-            </div>
-        
+    <style>
+      *,
+      ::before,
+      ::after {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      }
+      ::backdrop {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      } /* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb;
+      }
+      ::after,
+      ::before {
+        --tw-content: "";
+      }
+      :host,
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        tab-size: 4;
+        font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+      }
+      hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+      }
+      abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        font-size: 1em;
+      }
+      small {
+        font-size: 80%;
+      }
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      sup {
+        top: -0.5em;
+      }
+      table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-variation-settings: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      input:where([type="button"]),
+      input:where([type="reset"]),
+      input:where([type="submit"]) {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+      }
+      :-moz-focusring {
+        outline: auto;
+      }
+      :-moz-ui-invalid {
+        box-shadow: none;
+      }
+      progress {
+        vertical-align: baseline;
+      }
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+      [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      summary {
+        display: list-item;
+      }
+      blockquote,
+      dd,
+      dl,
+      figure,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      hr,
+      p,
+      pre {
+        margin: 0;
+      }
+      fieldset {
+        margin: 0;
+        padding: 0;
+      }
+      legend {
+        padding: 0;
+      }
+      menu,
+      ol,
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      dialog {
+        padding: 0;
+      }
+      textarea {
+        resize: vertical;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        opacity: 1;
+        color: #9ca3af;
+      }
+      [role="button"],
+      button {
+        cursor: pointer;
+      }
+      :disabled {
+        cursor: default;
+      }
+      audio,
+      canvas,
+      embed,
+      iframe,
+      img,
+      object,
+      svg,
+      video {
+        display: block;
+        vertical-align: middle;
+      }
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+      [hidden]:where(:not([hidden="until-found"])) {
+        display: none;
+      }
+      .absolute {
+        position: absolute;
+      }
+      .relative {
+        position: relative;
+      }
+      .left-3 {
+        left: 0.75rem;
+      }
+      .top-1\/2 {
+        top: 50%;
+      }
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .mb-12 {
+        margin-bottom: 3rem;
+      }
+      .mb-16 {
+        margin-bottom: 4rem;
+      }
+      .mb-2 {
+        margin-bottom: 0.5rem;
+      }
+      .mb-3 {
+        margin-bottom: 0.75rem;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+      .mb-8 {
+        margin-bottom: 2rem;
+      }
+      .mt-3 {
+        margin-top: 0.75rem;
+      }
+      .mt-6 {
+        margin-top: 1.5rem;
+      }
+      .flex {
+        display: flex;
+      }
+      .grid {
+        display: grid;
+      }
+      .hidden {
+        display: none;
+      }
+      .h-12 {
+        height: 3rem;
+      }
+      .h-16 {
+        height: 4rem;
+      }
+      .h-4 {
+        height: 1rem;
+      }
+      .min-h-screen {
+        min-height: 100vh;
+      }
+      .w-12 {
+        width: 3rem;
+      }
+      .w-16 {
+        width: 4rem;
+      }
+      .w-4 {
+        width: 1rem;
+      }
+      .w-64 {
+        width: 16rem;
+      }
+      .max-w-4xl {
+        max-width: 56rem;
+      }
+      .max-w-7xl {
+        max-width: 80rem;
+      }
+      .-translate-y-1\/2 {
+        --tw-translate-y: -50%;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .transform {
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .gap-6 {
+        gap: 1.5rem;
+      }
+      .gap-8 {
+        gap: 2rem;
+      }
+      .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(1rem * var(--tw-space-x-reverse));
+        margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+      }
+      .space-x-6 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+      }
+      .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(2rem * var(--tw-space-x-reverse));
+        margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+      }
+      .space-y-1 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+      }
+      .space-y-2 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+      }
+      .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+      }
+      .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+      }
+      .rounded-2xl {
+        border-radius: 24px;
+      }
+      .rounded-lg {
+        border-radius: 16px;
+      }
+      .border-b {
+        border-bottom-width: 1px;
+      }
+      .border-none {
+        border-style: none;
+      }
+      .border-gray-800 {
+        --tw-border-opacity: 1;
+        border-color: rgb(31 41 55 / var(--tw-border-opacity, 1));
+      }
+      .bg-blue-900\/30 {
+        background-color: rgb(30 58 138 / 0.3);
+      }
+      .bg-gray-800 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+      }
+      .bg-green-900\/30 {
+        background-color: rgb(20 83 45 / 0.3);
+      }
+      .bg-primary {
+        --tw-bg-opacity: 1;
+        background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+      }
+      .bg-purple-900\/30 {
+        background-color: rgb(88 28 135 / 0.3);
+      }
+      .bg-red-900\/30 {
+        background-color: rgb(127 29 29 / 0.3);
+      }
+      .bg-yellow-900\/30 {
+        background-color: rgb(113 63 18 / 0.3);
+      }
+      .bg-gradient-to-r {
+        background-image: linear-gradient(to right, var(--tw-gradient-stops));
+      }
+      .from-gray-900 {
+        --tw-gradient-from: #111827 var(--tw-gradient-from-position);
+        --tw-gradient-to: rgb(17 24 39 / 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .to-black {
+        --tw-gradient-to: #000 var(--tw-gradient-to-position);
+      }
+      .p-4 {
+        padding: 1rem;
+      }
+      .p-6 {
+        padding: 1.5rem;
+      }
+      .p-8 {
+        padding: 2rem;
+      }
+      .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .py-12 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      .py-2 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .py-4 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .pl-10 {
+        padding-left: 2.5rem;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .font-\[\'Pacifico\'\] {
+        font-family: "Pacifico";
+      }
+      .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      .text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+      .text-5xl {
+        font-size: 3rem;
+        line-height: 1;
+      }
+      .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+      .text-sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+      .text-xs {
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+      .font-bold {
+        font-weight: 700;
+      }
+      .leading-relaxed {
+        line-height: 1.625;
+      }
+      .text-blue-400 {
+        --tw-text-opacity: 1;
+        color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+      }
+      .text-gray-300 {
+        --tw-text-opacity: 1;
+        color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+      }
+      .text-gray-400 {
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+      }
+      .text-green-400 {
+        --tw-text-opacity: 1;
+        color: rgb(74 222 128 / var(--tw-text-opacity, 1));
+      }
+      .text-primary {
+        --tw-text-opacity: 1;
+        color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+      }
+      .text-purple-400 {
+        --tw-text-opacity: 1;
+        color: rgb(192 132 252 / var(--tw-text-opacity, 1));
+      }
+      .text-red-400 {
+        --tw-text-opacity: 1;
+        color: rgb(248 113 113 / var(--tw-text-opacity, 1));
+      }
+      .text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+      }
+      .text-yellow-400 {
+        --tw-text-opacity: 1;
+        color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+      }
+      .transition-colors {
+        transition-property: color, background-color, border-color, fill, stroke,
+          -webkit-text-decoration-color;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+      .hover\:text-primary:hover {
+        --tw-text-opacity: 1;
+        color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+      }
+      .focus\:ring-2:focus {
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+          var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+          calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+          var(--tw-shadow, 0 0 #0000);
+      }
+      .focus\:ring-primary:focus {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity, 1));
+      }
+      @media (min-width: 768px) {
+        .md\:flex {
+          display: flex;
+        }
+        .md\:grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .md\:grid-cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+      @media (min-width: 1024px) {
+        .lg\:grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .lg\:grid-cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+    </style>
+    <link
+      type="image/png"
+      rel="icon"
+      href="/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="./Severn Trent Market Expansion Strategy_files/css2(1)"
+    />
+  </head>
+  <body>
+    <header
+      class="bg-gradient-to-r from-gray-900 to-black py-4 px-6 border-b border-gray-800"
+    >
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-8">
+          <img src="/favicon.ico" alt="Readdy Logo" class="h-12 w-12" />
+          <nav class="hidden md:flex space-x-6">
+            <a href="#" class="text-white hover:text-primary transition-colors"
+              >Overview</a
+            >
+            <a href="#" class="text-white hover:text-primary transition-colors"
+              >Analysis</a
+            >
+            <a href="#" class="text-white hover:text-primary transition-colors"
+              >Strategy</a
+            >
+            <a href="#" class="text-white hover:text-primary transition-colors"
+              >Roadmap</a
+            >
+            <a href="#" class="text-white hover:text-primary transition-colors"
+              >KPIs</a
+            >
+          </nav>
         </div>
+      </div>
     </header>
 
     <main class="min-h-screen">
-        <section class="py-12 px-6">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h1 class="text-5xl font-bold mb-6">Severn Trent Market Expansion Strategy</h1>
-                    <p class="text-xl text-gray-300 max-w-4xl mx-auto">Comprehensive case study analysis for UK market expansion opportunities in the utility sector</p>
-                </div>
+      <section class="py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-12">
+            <h1 class="text-5xl font-bold mb-6">
+              Severn Trent Market Expansion Strategy
+            </h1>
+            <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+              Comprehensive case study analysis for UK market expansion
+              opportunities in the utility sector
+            </p>
+          </div>
 
-                <div class="card-bg rounded-2xl p-8 mb-12 hover-glow">
-                    <h2 class="text-3xl font-bold mb-6">Executive Summary</h2>
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <div class="text-center">
-                            <div class="text-4xl font-bold text-primary mb-2">£2.43B</div>
-                            <div class="text-gray-300">Annual Revenue FY25</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-4xl font-bold text-primary mb-2">4.6M</div>
-                            <div class="text-gray-300">Customers Served</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-4xl font-bold text-primary mb-2">9.7%</div>
-                            <div class="text-gray-300">Return on Regulated Equity</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-300 mt-6 leading-relaxed">Severn Trent plc stands as one of the UK's premier water utilities, serving over 4.6 million households across the Midlands and Wales. With record infrastructure investment of £1.67 billion and ambitious carbon-neutral targets by 2030, the company is positioned for strategic expansion in the evolving UK utility market.</p>
-                </div>
-
-                <section class="mb-16">
-                    <h2 class="text-4xl font-bold mb-8 text-center">Comprehensive Market Analysis</h2>
-                    
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-bold mb-6">SWOT Analysis</h3>
-                        <div class="card-bg rounded-2xl p-8 hover-glow">
-                            <div class="swot-grid">
-                                <div class="bg-green-900/30 p-6 rounded-lg">
-                                    <h4 class="text-xl font-bold text-green-400 mb-4">Strengths</h4>
-                                    <ul class="space-y-2 text-gray-300">
-                                        <li>• FTSE 100 listed with strong financial performance</li>
-                                        <li>• Record £1.67B infrastructure investment</li>
-                                        <li>• Sector-leading 9.7% Return on Regulated Equity</li>
-                                        <li>• Diversified operations across multiple divisions</li>
-                                        <li>• Strong renewable energy capabilities (150+ GWh)</li>
-                                        <li>• Established customer base of 4.6M households</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-red-900/30 p-6 rounded-lg">
-                                    <h4 class="text-xl font-bold text-red-400 mb-4">Weaknesses</h4>
-                                    <ul class="space-y-2 text-gray-300">
-                                        <li>• Customer service scrutiny and criticism</li>
-                                        <li>• Water bills rising by 26% causing public concern</li>
-                                        <li>• Limited geographic coverage compared to competitors</li>
-                                        <li>• Regulatory compliance challenges</li>
-                                        <li>• Environmental reporting transparency issues</li>
-                                        <li>• Aging infrastructure requiring continuous investment</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-blue-900/30 p-6 rounded-lg">
-                                    <h4 class="text-xl font-bold text-blue-400 mb-4">Opportunities</h4>
-                                    <ul class="space-y-2 text-gray-300">
-                                        <li>• Geographic expansion into underserved regions</li>
-                                        <li>• Smart water technology implementation</li>
-                                        <li>• Climate resilience infrastructure development</li>
-                                        <li>• Renewable energy expansion opportunities</li>
-                                        <li>• Public sector partnerships growth</li>
-                                        <li>• Digital transformation and IoT integration</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-yellow-900/30 p-6 rounded-lg">
-                                    <h4 class="text-xl font-bold text-yellow-400 mb-4">Threats</h4>
-                                    <ul class="space-y-2 text-gray-300">
-                                        <li>• Intense competition from major utilities</li>
-                                        <li>• Regulatory pressure and Ofwat oversight</li>
-                                        <li>• Climate change impact on operations</li>
-                                        <li>• Public scrutiny over pricing strategies</li>
-                                        <li>• Economic uncertainty affecting investment</li>
-                                        <li>• Potential market consolidation threats</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-bold mb-6">PESTLE Analysis</h3>
-                        <div class="card-bg rounded-2xl p-8 hover-glow">
-                            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                <div class="p-4 bg-gray-800 rounded-lg">
-                                    <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4">
-                                        <i class="ri-government-line text-white text-xl"></i>
-                                    </div>
-                                    <h4 class="text-lg font-bold mb-3">Political</h4>
-                                    <ul class="text-sm text-gray-300 space-y-1">
-                                        <li>• Ofwat regulatory framework</li>
-                                        <li>• Government environmental policies</li>
-                                        <li>• Brexit impact on regulations</li>
-                                        <li>• Public sector procurement changes</li>
-                                    </ul>
-                                </div>
-                                <div class="p-4 bg-gray-800 rounded-lg">
-                                    <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4">
-                                        <i class="ri-line-chart-line text-white text-xl"></i>
-                                    </div>
-                                    <h4 class="text-lg font-bold mb-3">Economic</h4>
-                                    <ul class="text-sm text-gray-300 space-y-1">
-                                        <li>• Interest rate fluctuations</li>
-                                        <li>• Inflation impact on costs</li>
-                                        <li>• Investment climate changes</li>
-                                        <li>• Consumer spending patterns</li>
-                                    </ul>
-                                </div>
-                                <div class="p-4 bg-gray-800 rounded-lg">
-                                    <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4">
-                                        <i class="ri-group-line text-white text-xl"></i>
-                                    </div>
-                                    <h4 class="text-lg font-bold mb-3">Social</h4>
-                                    <ul class="text-sm text-gray-300 space-y-1">
-                                        <li>• Environmental consciousness</li>
-                                        <li>• Water conservation awareness</li>
-                                        <li>• Demographic shifts</li>
-                                        <li>• Customer service expectations</li>
-                                    </ul>
-                                </div>
-                                <div class="p-4 bg-gray-800 rounded-lg">
-                                    <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4">
-                                        <i class="ri-cpu-line text-white text-xl"></i>
-                                    </div>
-                                    <h4 class="text-lg font-bold mb-3">Technological</h4>
-                                    <ul class="text-sm text-gray-300 space-y-1">
-                                        <li>• Smart meter technology</li>
-                                        <li>• IoT and data analytics</li>
-                                        <li>• Renewable energy systems</li>
-                                        <li>• Digital customer platforms</li>
-                                    </ul>
-                                </div>
-                                <div class="p-4 bg-gray-800 rounded-lg">
-                                    <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4">
-                                        <i class="ri-scales-line text-white text-xl"></i>
-                                    </div>
-                                    <h4 class="text-lg font-bold mb-3">Legal</h4>
-                                    <ul class="text-sm text-gray-300 space-y-1">
-                                        <li>• Water industry regulations</li>
-                                        <li>• Environmental compliance</li>
-                                        <li>• Data protection laws</li>
-                                        <li>• Health and safety standards</li>
-                                    </ul>
-                                </div>
-                                <div class="p-4 bg-gray-800 rounded-lg">
-                                    <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4">
-                                        <i class="ri-leaf-line text-white text-xl"></i>
-                                    </div>
-                                    <h4 class="text-lg font-bold mb-3">Environmental</h4>
-                                    <ul class="text-sm text-gray-300 space-y-1">
-                                        <li>• Climate change adaptation</li>
-                                        <li>• Carbon neutrality targets</li>
-                                        <li>• Water scarcity concerns</li>
-                                        <li>• Biodiversity protection</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-bold mb-6">Ansoff Matrix</h3>
-                        <div class="card-bg rounded-2xl p-8 hover-glow">
-                            <div class="ansoff-grid">
-                                <div class="bg-green-900/30 p-6 rounded-lg">
-                                    <h4 class="text-xl font-bold text-green-400 mb-4">Market Penetration</h4>
-                                    <p class="text-gray-300 mb-4">Existing Markets + Existing Products</p>
-                                    <ul class="text-sm text-gray-300 space-y-2">
-                                        <li>• Increase customer retention rates</li>
-                                        <li>• Expand service usage per customer</li>
-                                        <li>• Competitive pricing strategies</li>
-                                        <li>• Enhanced customer service quality</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-blue-900/30 p-6 rounded-lg">
-                                    <h4 class="text-xl font-bold text-blue-400 mb-4">Market Development</h4>
-                                    <p class="text-gray-300 mb-4">New Markets + Existing Products</p>
-                                    <ul class="text-sm text-gray-300 space-y-2">
-                                        <li>• Geographic expansion to new regions</li>
-                                        <li>• Target commercial and industrial sectors</li>
-                                        <li>• International market opportunities</li>
-                                        <li>• Public sector contract expansion</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-purple-900/30 p-6 rounded-lg">
-                                    <h4 class="text-xl font-bold text-purple-400 mb-4">Product Development</h4>
-                                    <p class="text-gray-300 mb-4">Existing Markets + New Products</p>
-                                    <ul class="text-sm text-gray-300 space-y-2">
-                                        <li>• Smart water management solutions</li>
-                                        <li>• Renewable energy services</li>
-                                        <li>• Water treatment technologies</li>
-                                        <li>• Digital customer platforms</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-red-900/30 p-6 rounded-lg">
-                                    <h4 class="text-xl font-bold text-red-400 mb-4">Diversification</h4>
-                                    <p class="text-gray-300 mb-4">New Markets + New Products</p>
-                                    <ul class="text-sm text-gray-300 space-y-2">
-                                        <li>• Environmental consulting services</li>
-                                        <li>• Clean technology solutions</li>
-                                        <li>• Infrastructure development projects</li>
-                                        <li>• International utility partnerships</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-bold mb-6">TOWS Matrix</h3>
-                        <div class="card-bg rounded-2xl p-8 hover-glow">
-                            <div class="tows-matrix">
-                                <div class="bg-gray-800 p-4 rounded-lg">
-                                    <h4 class="text-lg font-bold mb-3">Internal/External</h4>
-                                    <p class="text-gray-400 text-sm">Strategic Combinations</p>
-                                </div>
-                                <div class="bg-green-900/30 p-4 rounded-lg">
-                                    <h4 class="text-lg font-bold text-green-400 mb-3">Opportunities</h4>
-                                    <ul class="text-sm text-gray-300 space-y-1">
-                                        <li>• Smart technology</li>
-                                        <li>• Geographic expansion</li>
-                                        <li>• Renewable energy</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-yellow-900/30 p-4 rounded-lg">
-                                    <h4 class="text-lg font-bold text-yellow-400 mb-3">Threats</h4>
-                                    <ul class="text-sm text-gray-300 space-y-1">
-                                        <li>• Regulatory pressure</li>
-                                        <li>• Competition</li>
-                                        <li>• Public scrutiny</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-blue-900/30 p-4 rounded-lg">
-                                    <h4 class="text-lg font-bold text-blue-400 mb-3">Strengths</h4>
-                                    <p class="text-sm text-gray-300 mb-2">SO Strategies:</p>
-                                    <ul class="text-xs text-gray-300 space-y-1">
-                                        <li>• Leverage financial strength for smart tech investment</li>
-                                        <li>• Use renewable expertise for market expansion</li>
-                                    </ul>
-                                    <p class="text-sm text-gray-300 mb-2 mt-3">ST Strategies:</p>
-                                    <ul class="text-xs text-gray-300 space-y-1">
-                                        <li>• Strengthen customer service to counter criticism</li>
-                                        <li>• Use financial stability to weather regulatory changes</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-red-900/30 p-4 rounded-lg">
-                                    <h4 class="text-lg font-bold text-red-400 mb-3">Weaknesses</h4>
-                                    <p class="text-sm text-gray-300 mb-2">WO Strategies:</p>
-                                    <ul class="text-xs text-gray-300 space-y-1">
-                                        <li>• Expand geographically to reduce regional dependence</li>
-                                        <li>• Invest in smart tech to improve service quality</li>
-                                    </ul>
-                                    <p class="text-sm text-gray-300 mb-2 mt-3">WT Strategies:</p>
-                                    <ul class="text-xs text-gray-300 space-y-1">
-                                        <li>• Improve transparency to address public concerns</li>
-                                        <li>• Enhance operational efficiency to manage costs</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-bold mb-6">BCG Matrix</h3>
-                        <div class="card-bg rounded-2xl p-8 hover-glow">
-                            <div id="bcgMatrix" style="width: 100%; height: 500px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;" _echarts_instance_="ec_1754561798323"><div style="position: relative; width: 1216px; height: 500px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="1520" height="625" style="position: absolute; left: 0px; top: 0px; width: 1216px; height: 500px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="mb-16">
-                    <h2 class="text-4xl font-bold mb-8 text-center">Competitive Analysis</h2>
-                    <div class="card-bg rounded-2xl p-8 hover-glow">
-                        <div class="grid lg:grid-cols-2 gap-8">
-                            <div>
-                                <h3 class="text-2xl font-bold mb-6">Key Competitors</h3>
-                                <div class="space-y-4">
-                                    <div class="bg-gray-800 p-4 rounded-lg">
-                                        <h4 class="text-lg font-bold mb-2">United Utilities</h4>
-                                        <p class="text-gray-300 text-sm mb-2">Market Share: 18.5% | Revenue: £1.9B</p>
-                                        <p class="text-gray-400 text-sm">Strengths: Strong North West presence, digital innovation</p>
-                                    </div>
-                                    <div class="bg-gray-800 p-4 rounded-lg">
-                                        <h4 class="text-lg font-bold mb-2">Thames Water</h4>
-                                        <p class="text-gray-300 text-sm mb-2">Market Share: 24.2% | Revenue: £2.1B</p>
-                                        <p class="text-gray-400 text-sm">Strengths: London market dominance, infrastructure scale</p>
-                                    </div>
-                                    <div class="bg-gray-800 p-4 rounded-lg">
-                                        <h4 class="text-lg font-bold mb-2">Anglian Water</h4>
-                                        <p class="text-gray-300 text-sm mb-2">Market Share: 15.8% | Revenue: £1.4B</p>
-                                        <p class="text-gray-400 text-sm">Strengths: Innovation focus, customer service excellence</p>
-                                    </div>
-                                    <div class="bg-gray-800 p-4 rounded-lg">
-                                        <h4 class="text-lg font-bold mb-2">Northumbrian Water</h4>
-                                        <p class="text-gray-300 text-sm mb-2">Market Share: 8.3% | Revenue: £780M</p>
-                                        <p class="text-gray-400 text-sm">Strengths: Operational efficiency, regional expertise</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold mb-6">Competitive Positioning</h3>
-                                <div id="competitiveChart" style="width: 100%; height: 400px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;" _echarts_instance_="ec_1754561798324"><div style="position: relative; width: 592px; height: 400px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="740" height="500" style="position: absolute; left: 0px; top: 0px; width: 592px; height: 400px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="mb-16">
-                    <h2 class="text-4xl font-bold mb-8 text-center">Market Expansion Strategy</h2>
-                    <div class="grid lg:grid-cols-3 gap-8">
-                        <div class="card-bg rounded-2xl p-8 hover-glow">
-                            <div class="w-16 h-16 flex items-center justify-center bg-primary rounded-lg mb-6">
-                                <i class="ri-map-pin-line text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-xl font-bold mb-4">Geographic Expansion</h3>
-                            <ul class="text-gray-300 space-y-2">
-                                <li>• Target underserved regions in Northern England</li>
-                                <li>• Explore opportunities in Scotland and Northern Ireland</li>
-                                <li>• Strategic acquisitions of smaller regional players</li>
-                                <li>• Partnership opportunities with local authorities</li>
-                            </ul>
-                        </div>
-                        <div class="card-bg rounded-2xl p-8 hover-glow">
-                            <div class="w-16 h-16 flex items-center justify-center bg-primary rounded-lg mb-6">
-                                <i class="ri-building-line text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-xl font-bold mb-4">Service Diversification</h3>
-                            <ul class="text-gray-300 space-y-2">
-                                <li>• Smart water management solutions</li>
-                                <li>• Renewable energy services expansion</li>
-                                <li>• Environmental consulting services</li>
-                                <li>• Infrastructure maintenance contracts</li>
-                            </ul>
-                        </div>
-                        <div class="card-bg rounded-2xl p-8 hover-glow">
-                            <div class="w-16 h-16 flex items-center justify-center bg-primary rounded-lg mb-6">
-                                <i class="ri-rocket-line text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-xl font-bold mb-4">Innovation Leadership</h3>
-                            <ul class="text-gray-300 space-y-2">
-                                <li>• AI-powered predictive maintenance</li>
-                                <li>• IoT-enabled smart infrastructure</li>
-                                <li>• Digital customer experience platforms</li>
-                                <li>• Sustainable technology development</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="mb-16">
-                    <h2 class="text-4xl font-bold mb-8 text-center">Business Functions Integration</h2>
-                    <div class="card-bg rounded-2xl p-8 hover-glow">
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div class="p-6 bg-gray-800 rounded-lg">
-                                <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4">
-                                    <i class="ri-settings-line text-white text-xl"></i>
-                                </div>
-                                <h3 class="text-lg font-bold mb-3">Operations</h3>
-                                <ul class="text-sm text-gray-300 space-y-1">
-                                    <li>• Infrastructure optimization</li>
-                                    <li>• Predictive maintenance systems</li>
-                                    <li>• Quality assurance protocols</li>
-                                    <li>• Supply chain efficiency</li>
-                                </ul>
-                            </div>
-                            <div class="p-6 bg-gray-800 rounded-lg">
-                                <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4">
-                                    <i class="ri-customer-service-line text-white text-xl"></i>
-                                </div>
-                                <h3 class="text-lg font-bold mb-3">Customer Service</h3>
-                                <ul class="text-sm text-gray-300 space-y-1">
-                                    <li>• 24/7 support enhancement</li>
-                                    <li>• Digital self-service platforms</li>
-                                    <li>• Proactive communication systems</li>
-                                    <li>• Customer feedback integration</li>
-                                </ul>
-                            </div>
-                            <div class="p-6 bg-gray-800 rounded-lg">
-                                <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4">
-                                    <i class="ri-computer-line text-white text-xl"></i>
-                                </div>
-                                <h3 class="text-lg font-bold mb-3">Technology</h3>
-                                <ul class="text-sm text-gray-300 space-y-1">
-                                    <li>• Cloud infrastructure migration</li>
-                                    <li>• Data analytics capabilities</li>
-                                    <li>• Cybersecurity enhancement</li>
-                                    <li>• IoT sensor deployment</li>
-                                </ul>
-                            </div>
-                            <div class="p-6 bg-gray-800 rounded-lg">
-                                <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4">
-                                    <i class="ri-team-line text-white text-xl"></i>
-                                </div>
-                                <h3 class="text-lg font-bold mb-3">Human Resources</h3>
-                                <ul class="text-sm text-gray-300 space-y-1">
-                                    <li>• Skills development programs</li>
-                                    <li>• Digital literacy training</li>
-                                    <li>• Leadership development</li>
-                                    <li>• Performance management systems</li>
-                                </ul>
-                            </div>
-                            <div class="p-6 bg-gray-800 rounded-lg">
-                                <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4">
-                                    <i class="ri-money-dollar-circle-line text-white text-xl"></i>
-                                </div>
-                                <h3 class="text-lg font-bold mb-3">Finance</h3>
-                                <ul class="text-sm text-gray-300 space-y-1">
-                                    <li>• Investment optimization</li>
-                                    <li>• Cost management systems</li>
-                                    <li>• Financial risk assessment</li>
-                                    <li>• Revenue diversification</li>
-                                </ul>
-                            </div>
-                            <div class="p-6 bg-gray-800 rounded-lg">
-                                <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4">
-                                    <i class="ri-truck-line text-white text-xl"></i>
-                                </div>
-                                <h3 class="text-lg font-bold mb-3">Supply Chain</h3>
-                                <ul class="text-sm text-gray-300 space-y-1">
-                                    <li>• Supplier relationship management</li>
-                                    <li>• Procurement optimization</li>
-                                    <li>• Inventory management systems</li>
-                                    <li>• Sustainability compliance</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="mb-16">
-                    <h2 class="text-4xl font-bold mb-8 text-center">Strategic Roadmap</h2>
-                    <div class="space-y-8">
-                        <div class="card-bg rounded-2xl p-8 hover-glow roadmap-phase">
-                            <h3 class="text-2xl font-bold mb-6 text-primary">Phase 1: Market Entry (0-12 months)</h3>
-                            <div class="grid md:grid-cols-2 gap-8">
-                                <div>
-                                    <h4 class="text-lg font-bold mb-4">Geographic Expansion Plan</h4>
-                                    <ul class="text-gray-300 space-y-2">
-                                        <li>• Conduct market research in target regions</li>
-                                        <li>• Establish regional offices in key locations</li>
-                                        <li>• Develop local partnerships and alliances</li>
-                                        <li>• Obtain necessary regulatory approvals</li>
-                                        <li>• Launch pilot programs in selected areas</li>
-                                        <li>• Recruit and train local workforce</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-bold mb-4">Resource Allocation</h4>
-                                    <ul class="text-gray-300 space-y-2">
-                                        <li>• Allocate £200M for initial expansion</li>
-                                        <li>• Establish dedicated expansion team</li>
-                                        <li>• Invest in market research and analysis</li>
-                                        <li>• Develop marketing and branding strategies</li>
-                                        <li>• Create customer acquisition frameworks</li>
-                                        <li>• Set up operational infrastructure</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-bg rounded-2xl p-8 hover-glow roadmap-phase">
-                            <h3 class="text-2xl font-bold mb-6 text-primary">Phase 2: Market Development (12-24 months)</h3>
-                            <div class="grid md:grid-cols-2 gap-8">
-                                <div>
-                                    <h4 class="text-lg font-bold mb-4">Service Portfolio Expansion</h4>
-                                    <ul class="text-gray-300 space-y-2">
-                                        <li>• Launch smart water management services</li>
-                                        <li>• Expand renewable energy offerings</li>
-                                        <li>• Introduce environmental consulting</li>
-                                        <li>• Develop digital customer platforms</li>
-                                        <li>• Create maintenance service packages</li>
-                                        <li>• Establish innovation partnerships</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-bold mb-4">Customer Base Growth</h4>
-                                    <ul class="text-gray-300 space-y-2">
-                                        <li>• Target 500K new customers</li>
-                                        <li>• Implement customer retention programs</li>
-                                        <li>• Enhance service quality metrics</li>
-                                        <li>• Develop loyalty reward systems</li>
-                                        <li>• Expand commercial client base</li>
-                                        <li>• Strengthen public sector relationships</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-bg rounded-2xl p-8 hover-glow roadmap-phase">
-                            <h3 class="text-2xl font-bold mb-6 text-primary">Phase 3: Market Leadership (24-36 months)</h3>
-                            <div class="grid md:grid-cols-2 gap-8">
-                                <div>
-                                    <h4 class="text-lg font-bold mb-4">Innovation Initiatives</h4>
-                                    <ul class="text-gray-300 space-y-2">
-                                        <li>• Deploy AI-powered predictive systems</li>
-                                        <li>• Implement IoT sensor networks</li>
-                                        <li>• Launch carbon-neutral operations</li>
-                                        <li>• Develop proprietary technologies</li>
-                                        <li>• Create innovation labs and R&amp;D centers</li>
-                                        <li>• Establish technology partnerships</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-bold mb-4">Market Share Growth</h4>
-                                    <ul class="text-gray-300 space-y-2">
-                                        <li>• Achieve 20% market share in new regions</li>
-                                        <li>• Complete strategic acquisitions</li>
-                                        <li>• Establish market leadership position</li>
-                                        <li>• Develop competitive advantages</li>
-                                        <li>• Create barriers to entry</li>
-                                        <li>• Build brand recognition and trust</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="mb-16">
-                    <h2 class="text-4xl font-bold mb-8 text-center">Key Performance Indicators</h2>
-                    <div class="grid lg:grid-cols-3 gap-8">
-                        <div class="card-bg rounded-2xl p-8 hover-glow kpi-card">
-                            <h3 class="text-2xl font-bold mb-6 text-primary">Financial Metrics</h3>
-                            <div class="space-y-4">
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Revenue Growth</span>
-                                    <span class="text-xl font-bold">15% YoY</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Profit Margin</span>
-                                    <span class="text-xl font-bold">24.3%</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">ROI</span>
-                                    <span class="text-xl font-bold">12.5%</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">EBITDA</span>
-                                    <span class="text-xl font-bold">£850M</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Cost Efficiency</span>
-                                    <span class="text-xl font-bold">8% reduction</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-bg rounded-2xl p-8 hover-glow kpi-card">
-                            <h3 class="text-2xl font-bold mb-6 text-primary">Operational KPIs</h3>
-                            <div class="space-y-4">
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Service Quality Score</span>
-                                    <span class="text-xl font-bold">4.2/5</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Customer Satisfaction</span>
-                                    <span class="text-xl font-bold">85%</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Network Efficiency</span>
-                                    <span class="text-xl font-bold">92%</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Environmental Compliance</span>
-                                    <span class="text-xl font-bold">98%</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Innovation Index</span>
-                                    <span class="text-xl font-bold">7.8/10</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-bg rounded-2xl p-8 hover-glow kpi-card">
-                            <h3 class="text-2xl font-bold mb-6 text-primary">Market Performance</h3>
-                            <div class="space-y-4">
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Market Share</span>
-                                    <span class="text-xl font-bold">16.8%</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Customer Acquisition</span>
-                                    <span class="text-xl font-bold">125K/year</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Brand Recognition</span>
-                                    <span class="text-xl font-bold">78%</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Competitive Position</span>
-                                    <span class="text-xl font-bold">3rd</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-300">Market Penetration</span>
-                                    <span class="text-xl font-bold">22%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="mb-16">
-                    <h2 class="text-4xl font-bold mb-8 text-center">Conclusion</h2>
-                    <div class="card-bg rounded-2xl p-8 hover-glow">
-                        <div class="grid lg:grid-cols-2 gap-8">
-                            <div>
-                                <h3 class="text-2xl font-bold mb-6">Strategic Summary</h3>
-                                <p class="text-gray-300 mb-4 leading-relaxed">Severn Trent's market expansion strategy leverages its strong financial position, renewable energy expertise, and operational excellence to capture new market opportunities across the UK. The three-phase approach ensures systematic growth while maintaining service quality and regulatory compliance.</p>
-                                <h4 class="text-lg font-bold mb-3 text-primary">Key Success Factors</h4>
-                                <ul class="text-gray-300 space-y-2">
-                                    <li>• Strong financial foundation with £2.43B revenue</li>
-                                    <li>• Proven track record in infrastructure investment</li>
-                                    <li>• Leadership in renewable energy and sustainability</li>
-                                    <li>• Diversified service portfolio and market presence</li>
-                                    <li>• Commitment to innovation and digital transformation</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold mb-6">Risk Mitigation</h3>
-                                <div class="space-y-4">
-                                    <div class="bg-gray-800 p-4 rounded-lg">
-                                        <h4 class="text-lg font-bold mb-2">Regulatory Risk</h4>
-                                        <p class="text-gray-300 text-sm">Maintain proactive engagement with Ofwat and ensure compliance excellence</p>
-                                    </div>
-                                    <div class="bg-gray-800 p-4 rounded-lg">
-                                        <h4 class="text-lg font-bold mb-2">Competitive Risk</h4>
-                                        <p class="text-gray-300 text-sm">Focus on differentiation through innovation and superior customer service</p>
-                                    </div>
-                                    <div class="bg-gray-800 p-4 rounded-lg">
-                                        <h4 class="text-lg font-bold mb-2">Operational Risk</h4>
-                                        <p class="text-gray-300 text-sm">Implement robust project management and quality assurance systems</p>
-                                    </div>
-                                </div>
-                                <h4 class="text-lg font-bold mb-3 text-primary mt-6">Future Outlook</h4>
-                                <p class="text-gray-300 text-sm">With strategic execution of this expansion plan, Severn Trent is positioned to achieve 20% market share growth and establish leadership in sustainable utility services by 2027.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+          <div class="card-bg rounded-2xl p-8 mb-12 hover-glow">
+            <h2 class="text-3xl font-bold mb-6">Executive Summary</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="text-center">
+                <div class="text-4xl font-bold text-primary mb-2">£2.43B</div>
+                <div class="text-gray-300">Annual Revenue FY25</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-bold text-primary mb-2">4.6M</div>
+                <div class="text-gray-300">Customers Served</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-bold text-primary mb-2">9.7%</div>
+                <div class="text-gray-300">Return on Regulated Equity</div>
+              </div>
             </div>
-        </section></main>
-    
+            <p class="text-gray-300 mt-6 leading-relaxed">
+              Severn Trent plc stands as one of the UK's premier water
+              utilities, serving over 4.6 million households across the Midlands
+              and Wales. With record infrastructure investment of £1.67 billion
+              and ambitious carbon-neutral targets by 2030, the company is
+              positioned for strategic expansion in the evolving UK utility
+              market.
+            </p>
+          </div>
+
+          <section class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">
+              Comprehensive Market Analysis
+            </h2>
+
+            <div class="mb-12">
+              <h3 class="text-2xl font-bold mb-6">SWOT Analysis</h3>
+              <div class="card-bg rounded-2xl p-8 hover-glow">
+                <div class="swot-grid">
+                  <div class="bg-green-900/30 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-green-400 mb-4">
+                      Strengths
+                    </h4>
+                    <ul class="space-y-2 text-gray-300">
+                      <li>
+                        • FTSE 100 listed with strong financial performance
+                      </li>
+                      <li>• Record £1.67B infrastructure investment</li>
+                      <li>• Sector-leading 9.7% Return on Regulated Equity</li>
+                      <li>
+                        • Diversified operations across multiple divisions
+                      </li>
+                      <li>• Strong renewable energy capabilities (150+ GWh)</li>
+                      <li>• Established customer base of 4.6M households</li>
+                    </ul>
+                  </div>
+                  <div class="bg-red-900/30 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-red-400 mb-4">
+                      Weaknesses
+                    </h4>
+                    <ul class="space-y-2 text-gray-300">
+                      <li>• Customer service scrutiny and criticism</li>
+                      <li>
+                        • Water bills rising by 26% causing public concern
+                      </li>
+                      <li>
+                        • Limited geographic coverage compared to competitors
+                      </li>
+                      <li>• Regulatory compliance challenges</li>
+                      <li>• Environmental reporting transparency issues</li>
+                      <li>
+                        • Aging infrastructure requiring continuous investment
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bg-blue-900/30 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-blue-400 mb-4">
+                      Opportunities
+                    </h4>
+                    <ul class="space-y-2 text-gray-300">
+                      <li>• Geographic expansion into underserved regions</li>
+                      <li>• Smart water technology implementation</li>
+                      <li>• Climate resilience infrastructure development</li>
+                      <li>• Renewable energy expansion opportunities</li>
+                      <li>• Public sector partnerships growth</li>
+                      <li>• Digital transformation and IoT integration</li>
+                    </ul>
+                  </div>
+                  <div class="bg-yellow-900/30 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-yellow-400 mb-4">
+                      Threats
+                    </h4>
+                    <ul class="space-y-2 text-gray-300">
+                      <li>• Intense competition from major utilities</li>
+                      <li>• Regulatory pressure and Ofwat oversight</li>
+                      <li>• Climate change impact on operations</li>
+                      <li>• Public scrutiny over pricing strategies</li>
+                      <li>• Economic uncertainty affecting investment</li>
+                      <li>• Potential market consolidation threats</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-12">
+              <h3 class="text-2xl font-bold mb-6">PESTLE Analysis</h3>
+              <div class="card-bg rounded-2xl p-8 hover-glow">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div class="p-4 bg-gray-800 rounded-lg">
+                    <div
+                      class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4"
+                    >
+                      <i class="ri-government-line text-white text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3">Political</h4>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• Ofwat regulatory framework</li>
+                      <li>• Government environmental policies</li>
+                      <li>• Brexit impact on regulations</li>
+                      <li>• Public sector procurement changes</li>
+                    </ul>
+                  </div>
+                  <div class="p-4 bg-gray-800 rounded-lg">
+                    <div
+                      class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4"
+                    >
+                      <i class="ri-line-chart-line text-white text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3">Economic</h4>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• Interest rate fluctuations</li>
+                      <li>• Inflation impact on costs</li>
+                      <li>• Investment climate changes</li>
+                      <li>• Consumer spending patterns</li>
+                    </ul>
+                  </div>
+                  <div class="p-4 bg-gray-800 rounded-lg">
+                    <div
+                      class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4"
+                    >
+                      <i class="ri-group-line text-white text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3">Social</h4>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• Environmental consciousness</li>
+                      <li>• Water conservation awareness</li>
+                      <li>• Demographic shifts</li>
+                      <li>• Customer service expectations</li>
+                    </ul>
+                  </div>
+                  <div class="p-4 bg-gray-800 rounded-lg">
+                    <div
+                      class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4"
+                    >
+                      <i class="ri-cpu-line text-white text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3">Technological</h4>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• Smart meter technology</li>
+                      <li>• IoT and data analytics</li>
+                      <li>• Renewable energy systems</li>
+                      <li>• Digital customer platforms</li>
+                    </ul>
+                  </div>
+                  <div class="p-4 bg-gray-800 rounded-lg">
+                    <div
+                      class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4"
+                    >
+                      <i class="ri-scales-line text-white text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3">Legal</h4>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• Water industry regulations</li>
+                      <li>• Environmental compliance</li>
+                      <li>• Data protection laws</li>
+                      <li>• Health and safety standards</li>
+                    </ul>
+                  </div>
+                  <div class="p-4 bg-gray-800 rounded-lg">
+                    <div
+                      class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4"
+                    >
+                      <i class="ri-leaf-line text-white text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3">Environmental</h4>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• Climate change adaptation</li>
+                      <li>• Carbon neutrality targets</li>
+                      <li>• Water scarcity concerns</li>
+                      <li>• Biodiversity protection</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-12">
+              <h3 class="text-2xl font-bold mb-6">Ansoff Matrix</h3>
+              <div class="card-bg rounded-2xl p-8 hover-glow">
+                <div class="ansoff-grid">
+                  <div class="bg-green-900/30 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-green-400 mb-4">
+                      Market Penetration
+                    </h4>
+                    <p class="text-gray-300 mb-4">
+                      Existing Markets + Existing Products
+                    </p>
+                    <ul class="text-sm text-gray-300 space-y-2">
+                      <li>• Increase customer retention rates</li>
+                      <li>• Expand service usage per customer</li>
+                      <li>• Competitive pricing strategies</li>
+                      <li>• Enhanced customer service quality</li>
+                    </ul>
+                  </div>
+                  <div class="bg-blue-900/30 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-blue-400 mb-4">
+                      Market Development
+                    </h4>
+                    <p class="text-gray-300 mb-4">
+                      New Markets + Existing Products
+                    </p>
+                    <ul class="text-sm text-gray-300 space-y-2">
+                      <li>• Geographic expansion to new regions</li>
+                      <li>• Target commercial and industrial sectors</li>
+                      <li>• International market opportunities</li>
+                      <li>• Public sector contract expansion</li>
+                    </ul>
+                  </div>
+                  <div class="bg-purple-900/30 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-purple-400 mb-4">
+                      Product Development
+                    </h4>
+                    <p class="text-gray-300 mb-4">
+                      Existing Markets + New Products
+                    </p>
+                    <ul class="text-sm text-gray-300 space-y-2">
+                      <li>• Smart water management solutions</li>
+                      <li>• Renewable energy services</li>
+                      <li>• Water treatment technologies</li>
+                      <li>• Digital customer platforms</li>
+                    </ul>
+                  </div>
+                  <div class="bg-red-900/30 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-red-400 mb-4">
+                      Diversification
+                    </h4>
+                    <p class="text-gray-300 mb-4">New Markets + New Products</p>
+                    <ul class="text-sm text-gray-300 space-y-2">
+                      <li>• Environmental consulting services</li>
+                      <li>• Clean technology solutions</li>
+                      <li>• Infrastructure development projects</li>
+                      <li>• International utility partnerships</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-12">
+              <h3 class="text-2xl font-bold mb-6">TOWS Matrix</h3>
+              <div class="card-bg rounded-2xl p-8 hover-glow">
+                <div class="tows-matrix">
+                  <div class="bg-gray-800 p-4 rounded-lg">
+                    <h4 class="text-lg font-bold mb-3">Internal/External</h4>
+                    <p class="text-gray-400 text-sm">Strategic Combinations</p>
+                  </div>
+                  <div class="bg-green-900/30 p-4 rounded-lg">
+                    <h4 class="text-lg font-bold text-green-400 mb-3">
+                      Opportunities
+                    </h4>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• Smart technology</li>
+                      <li>• Geographic expansion</li>
+                      <li>• Renewable energy</li>
+                    </ul>
+                  </div>
+                  <div class="bg-yellow-900/30 p-4 rounded-lg">
+                    <h4 class="text-lg font-bold text-yellow-400 mb-3">
+                      Threats
+                    </h4>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• Regulatory pressure</li>
+                      <li>• Competition</li>
+                      <li>• Public scrutiny</li>
+                    </ul>
+                  </div>
+                  <div class="bg-blue-900/30 p-4 rounded-lg">
+                    <h4 class="text-lg font-bold text-blue-400 mb-3">
+                      Strengths
+                    </h4>
+                    <p class="text-sm text-gray-300 mb-2">SO Strategies:</p>
+                    <ul class="text-xs text-gray-300 space-y-1">
+                      <li>
+                        • Leverage financial strength for smart tech investment
+                      </li>
+                      <li>• Use renewable expertise for market expansion</li>
+                    </ul>
+                    <p class="text-sm text-gray-300 mb-2 mt-3">
+                      ST Strategies:
+                    </p>
+                    <ul class="text-xs text-gray-300 space-y-1">
+                      <li>
+                        • Strengthen customer service to counter criticism
+                      </li>
+                      <li>
+                        • Use financial stability to weather regulatory changes
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bg-red-900/30 p-4 rounded-lg">
+                    <h4 class="text-lg font-bold text-red-400 mb-3">
+                      Weaknesses
+                    </h4>
+                    <p class="text-sm text-gray-300 mb-2">WO Strategies:</p>
+                    <ul class="text-xs text-gray-300 space-y-1">
+                      <li>
+                        • Expand geographically to reduce regional dependence
+                      </li>
+                      <li>• Invest in smart tech to improve service quality</li>
+                    </ul>
+                    <p class="text-sm text-gray-300 mb-2 mt-3">
+                      WT Strategies:
+                    </p>
+                    <ul class="text-xs text-gray-300 space-y-1">
+                      <li>• Improve transparency to address public concerns</li>
+                      <li>• Enhance operational efficiency to manage costs</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-12">
+              <h3 class="text-2xl font-bold mb-6">BCG Matrix</h3>
+              <div class="card-bg rounded-2xl p-8 hover-glow">
+                <div
+                  id="bcgMatrix"
+                  style="
+                    width: 100%;
+                    height: 500px;
+                    user-select: none;
+                    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                    position: relative;
+                  "
+                  _echarts_instance_="ec_1754561798323"
+                >
+                  <div
+                    style="
+                      position: relative;
+                      width: 1216px;
+                      height: 500px;
+                      padding: 0px;
+                      margin: 0px;
+                      border-width: 0px;
+                    "
+                  >
+                    <canvas
+                      data-zr-dom-id="zr_0"
+                      width="1520"
+                      height="625"
+                      style="
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        width: 1216px;
+                        height: 500px;
+                        user-select: none;
+                        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                        padding: 0px;
+                        margin: 0px;
+                        border-width: 0px;
+                      "
+                    ></canvas>
+                  </div>
+                  <div class=""></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">
+              Competitive Analysis
+            </h2>
+            <div class="card-bg rounded-2xl p-8 hover-glow">
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div>
+                  <h3 class="text-2xl font-bold mb-6">Key Competitors</h3>
+                  <div class="space-y-4">
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                      <h4 class="text-lg font-bold mb-2">United Utilities</h4>
+                      <p class="text-gray-300 text-sm mb-2">
+                        Market Share: 18.5% | Revenue: £1.9B
+                      </p>
+                      <p class="text-gray-400 text-sm">
+                        Strengths: Strong North West presence, digital
+                        innovation
+                      </p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                      <h4 class="text-lg font-bold mb-2">Thames Water</h4>
+                      <p class="text-gray-300 text-sm mb-2">
+                        Market Share: 24.2% | Revenue: £2.1B
+                      </p>
+                      <p class="text-gray-400 text-sm">
+                        Strengths: London market dominance, infrastructure scale
+                      </p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                      <h4 class="text-lg font-bold mb-2">Anglian Water</h4>
+                      <p class="text-gray-300 text-sm mb-2">
+                        Market Share: 15.8% | Revenue: £1.4B
+                      </p>
+                      <p class="text-gray-400 text-sm">
+                        Strengths: Innovation focus, customer service excellence
+                      </p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                      <h4 class="text-lg font-bold mb-2">Northumbrian Water</h4>
+                      <p class="text-gray-300 text-sm mb-2">
+                        Market Share: 8.3% | Revenue: £780M
+                      </p>
+                      <p class="text-gray-400 text-sm">
+                        Strengths: Operational efficiency, regional expertise
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold mb-6">
+                    Competitive Positioning
+                  </h3>
+                  <div
+                    id="competitiveChart"
+                    style="
+                      width: 100%;
+                      height: 400px;
+                      user-select: none;
+                      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                      position: relative;
+                    "
+                    _echarts_instance_="ec_1754561798324"
+                  >
+                    <div
+                      style="
+                        position: relative;
+                        width: 592px;
+                        height: 400px;
+                        padding: 0px;
+                        margin: 0px;
+                        border-width: 0px;
+                      "
+                    >
+                      <canvas
+                        data-zr-dom-id="zr_0"
+                        width="740"
+                        height="500"
+                        style="
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                          width: 592px;
+                          height: 400px;
+                          user-select: none;
+                          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                          padding: 0px;
+                          margin: 0px;
+                          border-width: 0px;
+                        "
+                      ></canvas>
+                    </div>
+                    <div class=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">
+              Market Expansion Strategy
+            </h2>
+            <div class="grid lg:grid-cols-3 gap-8">
+              <div class="card-bg rounded-2xl p-8 hover-glow">
+                <div
+                  class="w-16 h-16 flex items-center justify-center bg-primary rounded-lg mb-6"
+                >
+                  <i class="ri-map-pin-line text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Geographic Expansion</h3>
+                <ul class="text-gray-300 space-y-2">
+                  <li>• Target underserved regions in Northern England</li>
+                  <li>
+                    • Explore opportunities in Scotland and Northern Ireland
+                  </li>
+                  <li>• Strategic acquisitions of smaller regional players</li>
+                  <li>• Partnership opportunities with local authorities</li>
+                </ul>
+              </div>
+              <div class="card-bg rounded-2xl p-8 hover-glow">
+                <div
+                  class="w-16 h-16 flex items-center justify-center bg-primary rounded-lg mb-6"
+                >
+                  <i class="ri-building-line text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Service Diversification</h3>
+                <ul class="text-gray-300 space-y-2">
+                  <li>• Smart water management solutions</li>
+                  <li>• Renewable energy services expansion</li>
+                  <li>• Environmental consulting services</li>
+                  <li>• Infrastructure maintenance contracts</li>
+                </ul>
+              </div>
+              <div class="card-bg rounded-2xl p-8 hover-glow">
+                <div
+                  class="w-16 h-16 flex items-center justify-center bg-primary rounded-lg mb-6"
+                >
+                  <i class="ri-rocket-line text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Innovation Leadership</h3>
+                <ul class="text-gray-300 space-y-2">
+                  <li>• AI-powered predictive maintenance</li>
+                  <li>• IoT-enabled smart infrastructure</li>
+                  <li>• Digital customer experience platforms</li>
+                  <li>• Sustainable technology development</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">
+              Business Functions Integration
+            </h2>
+            <div class="card-bg rounded-2xl p-8 hover-glow">
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 bg-gray-800 rounded-lg">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4"
+                  >
+                    <i class="ri-settings-line text-white text-xl"></i>
+                  </div>
+                  <h3 class="text-lg font-bold mb-3">Operations</h3>
+                  <ul class="text-sm text-gray-300 space-y-1">
+                    <li>• Infrastructure optimization</li>
+                    <li>• Predictive maintenance systems</li>
+                    <li>• Quality assurance protocols</li>
+                    <li>• Supply chain efficiency</li>
+                  </ul>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4"
+                  >
+                    <i class="ri-customer-service-line text-white text-xl"></i>
+                  </div>
+                  <h3 class="text-lg font-bold mb-3">Customer Service</h3>
+                  <ul class="text-sm text-gray-300 space-y-1">
+                    <li>• 24/7 support enhancement</li>
+                    <li>• Digital self-service platforms</li>
+                    <li>• Proactive communication systems</li>
+                    <li>• Customer feedback integration</li>
+                  </ul>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4"
+                  >
+                    <i class="ri-computer-line text-white text-xl"></i>
+                  </div>
+                  <h3 class="text-lg font-bold mb-3">Technology</h3>
+                  <ul class="text-sm text-gray-300 space-y-1">
+                    <li>• Cloud infrastructure migration</li>
+                    <li>• Data analytics capabilities</li>
+                    <li>• Cybersecurity enhancement</li>
+                    <li>• IoT sensor deployment</li>
+                  </ul>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4"
+                  >
+                    <i class="ri-team-line text-white text-xl"></i>
+                  </div>
+                  <h3 class="text-lg font-bold mb-3">Human Resources</h3>
+                  <ul class="text-sm text-gray-300 space-y-1">
+                    <li>• Skills development programs</li>
+                    <li>• Digital literacy training</li>
+                    <li>• Leadership development</li>
+                    <li>• Performance management systems</li>
+                  </ul>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4"
+                  >
+                    <i
+                      class="ri-money-dollar-circle-line text-white text-xl"
+                    ></i>
+                  </div>
+                  <h3 class="text-lg font-bold mb-3">Finance</h3>
+                  <ul class="text-sm text-gray-300 space-y-1">
+                    <li>• Investment optimization</li>
+                    <li>• Cost management systems</li>
+                    <li>• Financial risk assessment</li>
+                    <li>• Revenue diversification</li>
+                  </ul>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg mb-4"
+                  >
+                    <i class="ri-truck-line text-white text-xl"></i>
+                  </div>
+                  <h3 class="text-lg font-bold mb-3">Supply Chain</h3>
+                  <ul class="text-sm text-gray-300 space-y-1">
+                    <li>• Supplier relationship management</li>
+                    <li>• Procurement optimization</li>
+                    <li>• Inventory management systems</li>
+                    <li>• Sustainability compliance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">
+              Strategic Roadmap
+            </h2>
+            <div class="space-y-8">
+              <div class="card-bg rounded-2xl p-8 hover-glow roadmap-phase">
+                <h3 class="text-2xl font-bold mb-6 text-primary">
+                  Phase 1: Market Entry (0-12 months)
+                </h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 class="text-lg font-bold mb-4">
+                      Geographic Expansion Plan
+                    </h4>
+                    <ul class="text-gray-300 space-y-2">
+                      <li>• Conduct market research in target regions</li>
+                      <li>• Establish regional offices in key locations</li>
+                      <li>• Develop local partnerships and alliances</li>
+                      <li>• Obtain necessary regulatory approvals</li>
+                      <li>• Launch pilot programs in selected areas</li>
+                      <li>• Recruit and train local workforce</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold mb-4">Resource Allocation</h4>
+                    <ul class="text-gray-300 space-y-2">
+                      <li>• Allocate £200M for initial expansion</li>
+                      <li>• Establish dedicated expansion team</li>
+                      <li>• Invest in market research and analysis</li>
+                      <li>• Develop marketing and branding strategies</li>
+                      <li>• Create customer acquisition frameworks</li>
+                      <li>• Set up operational infrastructure</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-bg rounded-2xl p-8 hover-glow roadmap-phase">
+                <h3 class="text-2xl font-bold mb-6 text-primary">
+                  Phase 2: Market Development (12-24 months)
+                </h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 class="text-lg font-bold mb-4">
+                      Service Portfolio Expansion
+                    </h4>
+                    <ul class="text-gray-300 space-y-2">
+                      <li>• Launch smart water management services</li>
+                      <li>• Expand renewable energy offerings</li>
+                      <li>• Introduce environmental consulting</li>
+                      <li>• Develop digital customer platforms</li>
+                      <li>• Create maintenance service packages</li>
+                      <li>• Establish innovation partnerships</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold mb-4">Customer Base Growth</h4>
+                    <ul class="text-gray-300 space-y-2">
+                      <li>• Target 500K new customers</li>
+                      <li>• Implement customer retention programs</li>
+                      <li>• Enhance service quality metrics</li>
+                      <li>• Develop loyalty reward systems</li>
+                      <li>• Expand commercial client base</li>
+                      <li>• Strengthen public sector relationships</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-bg rounded-2xl p-8 hover-glow roadmap-phase">
+                <h3 class="text-2xl font-bold mb-6 text-primary">
+                  Phase 3: Market Leadership (24-36 months)
+                </h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 class="text-lg font-bold mb-4">
+                      Innovation Initiatives
+                    </h4>
+                    <ul class="text-gray-300 space-y-2">
+                      <li>• Deploy AI-powered predictive systems</li>
+                      <li>• Implement IoT sensor networks</li>
+                      <li>• Launch carbon-neutral operations</li>
+                      <li>• Develop proprietary technologies</li>
+                      <li>• Create innovation labs and R&amp;D centers</li>
+                      <li>• Establish technology partnerships</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold mb-4">Market Share Growth</h4>
+                    <ul class="text-gray-300 space-y-2">
+                      <li>• Achieve 20% market share in new regions</li>
+                      <li>• Complete strategic acquisitions</li>
+                      <li>• Establish market leadership position</li>
+                      <li>• Develop competitive advantages</li>
+                      <li>• Create barriers to entry</li>
+                      <li>• Build brand recognition and trust</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">
+              Key Performance Indicators
+            </h2>
+            <div class="grid lg:grid-cols-3 gap-8">
+              <div class="card-bg rounded-2xl p-8 hover-glow kpi-card">
+                <h3 class="text-2xl font-bold mb-6 text-primary">
+                  Financial Metrics
+                </h3>
+                <div class="space-y-4">
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Revenue Growth</span>
+                    <span class="text-xl font-bold">15% YoY</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Profit Margin</span>
+                    <span class="text-xl font-bold">24.3%</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">ROI</span>
+                    <span class="text-xl font-bold">12.5%</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">EBITDA</span>
+                    <span class="text-xl font-bold">£850M</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Cost Efficiency</span>
+                    <span class="text-xl font-bold">8% reduction</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-bg rounded-2xl p-8 hover-glow kpi-card">
+                <h3 class="text-2xl font-bold mb-6 text-primary">
+                  Operational KPIs
+                </h3>
+                <div class="space-y-4">
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Service Quality Score</span>
+                    <span class="text-xl font-bold">4.2/5</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Customer Satisfaction</span>
+                    <span class="text-xl font-bold">85%</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Network Efficiency</span>
+                    <span class="text-xl font-bold">92%</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Environmental Compliance</span>
+                    <span class="text-xl font-bold">98%</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Innovation Index</span>
+                    <span class="text-xl font-bold">7.8/10</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-bg rounded-2xl p-8 hover-glow kpi-card">
+                <h3 class="text-2xl font-bold mb-6 text-primary">
+                  Market Performance
+                </h3>
+                <div class="space-y-4">
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Market Share</span>
+                    <span class="text-xl font-bold">16.8%</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Customer Acquisition</span>
+                    <span class="text-xl font-bold">125K/year</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Brand Recognition</span>
+                    <span class="text-xl font-bold">78%</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Competitive Position</span>
+                    <span class="text-xl font-bold">3rd</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300">Market Penetration</span>
+                    <span class="text-xl font-bold">22%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">Conclusion</h2>
+            <div class="card-bg rounded-2xl p-8 hover-glow">
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div>
+                  <h3 class="text-2xl font-bold mb-6">Strategic Summary</h3>
+                  <p class="text-gray-300 mb-4 leading-relaxed">
+                    Severn Trent's market expansion strategy leverages its
+                    strong financial position, renewable energy expertise, and
+                    operational excellence to capture new market opportunities
+                    across the UK. The three-phase approach ensures systematic
+                    growth while maintaining service quality and regulatory
+                    compliance.
+                  </p>
+                  <h4 class="text-lg font-bold mb-3 text-primary">
+                    Key Success Factors
+                  </h4>
+                  <ul class="text-gray-300 space-y-2">
+                    <li>• Strong financial foundation with £2.43B revenue</li>
+                    <li>• Proven track record in infrastructure investment</li>
+                    <li>• Leadership in renewable energy and sustainability</li>
+                    <li>• Diversified service portfolio and market presence</li>
+                    <li>
+                      • Commitment to innovation and digital transformation
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold mb-6">Risk Mitigation</h3>
+                  <div class="space-y-4">
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                      <h4 class="text-lg font-bold mb-2">Regulatory Risk</h4>
+                      <p class="text-gray-300 text-sm">
+                        Maintain proactive engagement with Ofwat and ensure
+                        compliance excellence
+                      </p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                      <h4 class="text-lg font-bold mb-2">Competitive Risk</h4>
+                      <p class="text-gray-300 text-sm">
+                        Focus on differentiation through innovation and superior
+                        customer service
+                      </p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                      <h4 class="text-lg font-bold mb-2">Operational Risk</h4>
+                      <p class="text-gray-300 text-sm">
+                        Implement robust project management and quality
+                        assurance systems
+                      </p>
+                    </div>
+                  </div>
+                  <h4 class="text-lg font-bold mb-3 text-primary mt-6">
+                    Future Outlook
+                  </h4>
+                  <p class="text-gray-300 text-sm">
+                    With strategic execution of this expansion plan, Severn
+                    Trent is positioned to achieve 20% market share growth and
+                    establish leadership in sustainable utility services by
+                    2027.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
 
     <script id="bcgMatrixChart">
-        document.addEventListener('DOMContentLoaded', function() {
-            const bcgChart = echarts.init(document.getElementById('bcgMatrix'));
-            
-            const bcgOption = {
-                animation: false,
-                title: {
-                    text: 'Business Portfolio Analysis',
-                    textStyle: { color: '#FFFFFF', fontSize: 16 }
+      document.addEventListener("DOMContentLoaded", function () {
+        const bcgChart = echarts.init(document.getElementById("bcgMatrix"));
+
+        const bcgOption = {
+          animation: false,
+          title: {
+            text: "Business Portfolio Analysis",
+            textStyle: { color: "#FFFFFF", fontSize: 16 },
+          },
+          xAxis: {
+            type: "value",
+            name: "Market Share",
+            nameTextStyle: { color: "#FFFFFF" },
+            axisLabel: { color: "#FFFFFF" },
+            splitLine: { lineStyle: { color: "#444444" } },
+          },
+          yAxis: {
+            type: "value",
+            name: "Market Growth Rate",
+            nameTextStyle: { color: "#FFFFFF" },
+            axisLabel: { color: "#FFFFFF" },
+            splitLine: { lineStyle: { color: "#444444" } },
+          },
+          series: [
+            {
+              type: "scatter",
+              symbolSize: function (data) {
+                return data[2] * 20;
+              },
+              data: [
+                [0.168, 0.15, 8, "Water Services"],
+                [0.12, 0.25, 6, "Renewable Energy"],
+                [0.08, 0.35, 4, "Smart Technology"],
+                [0.05, 0.08, 3, "Consulting Services"],
+              ],
+              itemStyle: {
+                color: function (params) {
+                  const colors = [
+                    "rgba(87, 181, 231, 1)",
+                    "rgba(141, 211, 199, 1)",
+                    "rgba(251, 191, 114, 1)",
+                    "rgba(252, 141, 98, 1)",
+                  ];
+                  return colors[params.dataIndex];
                 },
-                xAxis: {
-                    type: 'value',
-                    name: 'Market Share',
-                    nameTextStyle: { color: '#FFFFFF' },
-                    axisLabel: { color: '#FFFFFF' },
-                    splitLine: { lineStyle: { color: '#444444' } }
-                },
-                yAxis: {
-                    type: 'value',
-                    name: 'Market Growth Rate',
-                    nameTextStyle: { color: '#FFFFFF' },
-                    axisLabel: { color: '#FFFFFF' },
-                    splitLine: { lineStyle: { color: '#444444' } }
-                },
-                series: [{
-                    type: 'scatter',
-                    symbolSize: function(data) { return data[2] * 20; },
-                    data: [
-                        [0.168, 0.15, 8, 'Water Services'],
-                        [0.12, 0.25, 6, 'Renewable Energy'],
-                        [0.08, 0.35, 4, 'Smart Technology'],
-                        [0.05, 0.08, 3, 'Consulting Services']
-                    ],
-                    itemStyle: {
-                        color: function(params) {
-                            const colors = ['rgba(87, 181, 231, 1)', 'rgba(141, 211, 199, 1)', 'rgba(251, 191, 114, 1)', 'rgba(252, 141, 98, 1)'];
-                            return colors[params.dataIndex];
-                        }
-                    }
-                }],
-                tooltip: {
-                    formatter: function(params) {
-                        return params.data[3] + '<br/>Market Share: ' + (params.data[0] * 100).toFixed(1) + '%<br/>Growth Rate: ' + (params.data[1] * 100).toFixed(1) + '%';
-                    },
-                    backgroundColor: 'rgba(255, 255, 255, 0.9)',
-                    textStyle: { color: '#1f2937' }
-                },
-                grid: { top: 60, left: 80, right: 40, bottom: 60 }
-            };
-            
-            bcgChart.setOption(bcgOption);
-        });
+              },
+            },
+          ],
+          tooltip: {
+            formatter: function (params) {
+              return (
+                params.data[3] +
+                "<br/>Market Share: " +
+                (params.data[0] * 100).toFixed(1) +
+                "%<br/>Growth Rate: " +
+                (params.data[1] * 100).toFixed(1) +
+                "%"
+              );
+            },
+            backgroundColor: "rgba(255, 255, 255, 0.9)",
+            textStyle: { color: "#1f2937" },
+          },
+          grid: { top: 60, left: 80, right: 40, bottom: 60 },
+        };
+
+        bcgChart.setOption(bcgOption);
+      });
     </script>
 
     <script id="competitiveChart">
-        document.addEventListener('DOMContentLoaded', function() {
-            const compChart = echarts.init(document.getElementById('competitiveChart'));
-            
-            const compOption = {
-                animation: false,
-                title: {
-                    text: 'Market Position vs Performance',
-                    textStyle: { color: '#FFFFFF', fontSize: 16 }
+      document.addEventListener("DOMContentLoaded", function () {
+        const compChart = echarts.init(
+          document.getElementById("competitiveChart")
+        );
+
+        const compOption = {
+          animation: false,
+          title: {
+            text: "Market Position vs Performance",
+            textStyle: { color: "#FFFFFF", fontSize: 16 },
+          },
+          xAxis: {
+            type: "value",
+            name: "Market Share (%)",
+            nameTextStyle: { color: "#FFFFFF" },
+            axisLabel: { color: "#FFFFFF" },
+            splitLine: { lineStyle: { color: "#444444" } },
+          },
+          yAxis: {
+            type: "value",
+            name: "ROE (%)",
+            nameTextStyle: { color: "#FFFFFF" },
+            axisLabel: { color: "#FFFFFF" },
+            splitLine: { lineStyle: { color: "#444444" } },
+          },
+          series: [
+            {
+              type: "scatter",
+              symbolSize: 60,
+              data: [
+                [16.8, 9.7, "Severn Trent"],
+                [24.2, 8.2, "Thames Water"],
+                [18.5, 8.9, "United Utilities"],
+                [15.8, 9.1, "Anglian Water"],
+                [8.3, 7.8, "Northumbrian Water"],
+              ],
+              itemStyle: {
+                color: function (params) {
+                  return params.dataIndex === 0
+                    ? "rgba(87, 181, 231, 1)"
+                    : "rgba(141, 211, 199, 0.7)";
                 },
-                xAxis: {
-                    type: 'value',
-                    name: 'Market Share (%)',
-                    nameTextStyle: { color: '#FFFFFF' },
-                    axisLabel: { color: '#FFFFFF' },
-                    splitLine: { lineStyle: { color: '#444444' } }
-                },
-                yAxis: {
-                    type: 'value',
-                    name: 'ROE (%)',
-                    nameTextStyle: { color: '#FFFFFF' },
-                    axisLabel: { color: '#FFFFFF' },
-                    splitLine: { lineStyle: { color: '#444444' } }
-                },
-                series: [{
-                    type: 'scatter',
-                    symbolSize: 60,
-                    data: [
-                        [16.8, 9.7, 'Severn Trent'],
-                        [24.2, 8.2, 'Thames Water'],
-                        [18.5, 8.9, 'United Utilities'],
-                        [15.8, 9.1, 'Anglian Water'],
-                        [8.3, 7.8, 'Northumbrian Water']
-                    ],
-                    itemStyle: {
-                        color: function(params) {
-                            return params.dataIndex === 0 ? 'rgba(87, 181, 231, 1)' : 'rgba(141, 211, 199, 0.7)';
-                        }
-                    }
-                }],
-                tooltip: {
-                    formatter: function(params) {
-                        return params.data[2] + '<br/>Market Share: ' + params.data[0] + '%<br/>ROE: ' + params.data[1] + '%';
-                    },
-                    backgroundColor: 'rgba(255, 255, 255, 0.9)',
-                    textStyle: { color: '#1f2937' }
-                },
-                grid: { top: 60, left: 60, right: 40, bottom: 60 }
-            };
-            
-            compChart.setOption(compOption);
-        });
+              },
+            },
+          ],
+          tooltip: {
+            formatter: function (params) {
+              return (
+                params.data[2] +
+                "<br/>Market Share: " +
+                params.data[0] +
+                "%<br/>ROE: " +
+                params.data[1] +
+                "%"
+              );
+            },
+            backgroundColor: "rgba(255, 255, 255, 0.9)",
+            textStyle: { color: "#1f2937" },
+          },
+          grid: { top: 60, left: 60, right: 40, bottom: 60 },
+        };
+
+        compChart.setOption(compOption);
+      });
     </script>
-<script>
-    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
-    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
-        api_host: 'https://us.i.posthog.com',
+    <script>
+      !(function (t, e) {
+        var o, n, p, r;
+        e.__SV ||
+          ((window.posthog = e),
+          (e._i = []),
+          (e.init = function (i, s, a) {
+            function g(t, e) {
+              var o = e.split(".");
+              2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                (t[e] = function () {
+                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                });
+            }
+            ((p = t.createElement("script")).type = "text/javascript"),
+              (p.crossOrigin = "anonymous"),
+              (p.async = !0),
+              (p.src =
+                s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
+                "/static/array.js"),
+              (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+                p,
+                r
+              );
+            var u = e;
+            for (
+              void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                u.people = u.people || [],
+                u.toString = function (t) {
+                  var e = "posthog";
+                  return (
+                    "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                  );
+                },
+                u.people.toString = function () {
+                  return u.toString(1) + ".people (stub)";
+                },
+                o =
+                  "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(
+                    " "
+                  ),
+                n = 0;
+              n < o.length;
+              n++
+            )
+              g(u, o[n]);
+            e._i.push([i, s, a]);
+          }),
+          (e.__SV = 1));
+      })(document, window.posthog || []);
+      posthog.init("phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd", {
+        api_host: "https://us.i.posthog.com",
         autocapture: false,
         capture_pageview: false,
         capture_pageleave: false,
         capture_performance: {
-            web_vitals: false,
+          web_vitals: false,
         },
         rageclick: false,
-    })
-    window.shareKey = 'VdwIgD5Ot7i-Nl76S9Jyqg';
-    window.host = 'readdy.ai';
-</script>
-<script src="./Severn Trent Market Expansion Strategy_files/share.js.download"></script>
-
-</body></html>
+      });
+      window.shareKey = "VdwIgD5Ot7i-Nl76S9Jyqg";
+      window.host = "readdy.ai";
+    </script>
+    <script src="./Severn Trent Market Expansion Strategy_files/share.js.download"></script>
+  </body>
+</html>
